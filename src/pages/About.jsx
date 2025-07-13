@@ -1,6 +1,7 @@
 import React, { useEffect, memo } from "react";
 import { FileText, Code, Sparkles } from "lucide-react";
 import AOS from 'aos';
+import Foto from '../assets/Foto.png';
 import 'aos/dist/aos.css';
 
 // Memoized Components
@@ -47,7 +48,7 @@ const ProfileImage = memo(() => (
           <div className="absolute inset-0 bg-gradient-to-t from-teal-500/20 via-transparent to-cyan-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
           
           <img
-            src="\src\assets\Foto.png"
+            src={Foto}
             alt="Profile"
             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
             loading="lazy"

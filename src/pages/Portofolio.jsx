@@ -13,6 +13,17 @@ import TechStackIcon from "../components/TechStackIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Code, Boxes } from "lucide-react";
+import htmlIcon from '../assets/html.svg';
+import cssIcon from '../assets/css.svg';
+import jsIcon from '../assets/javascript.svg';
+import tailwindIcon from '../assets/tailwind.svg';
+import reactIcon from '../assets/react.svg';
+import phpIcon from '../assets/php.svg';
+import laravelIcon from '../assets/laravel.svg';
+import firebaseIcon from '../assets/firebase.svg';
+import mysqlIcon from '../assets/mysql.svg';
+import vercelIcon from '../assets/vercel.svg';
+import kotlinIcon from '../assets/kotlin.svg';
 
 const ToggleButton = ({ onClick, isShowingMore }) => (
   <button
@@ -98,20 +109,19 @@ function a11yProps(index) {
 }
 
 const techStacks = [
-  { icon: "src/assets/html.svg", language: "HTML" },
-  { icon: "src/assets/css.svg", language: "CSS" },
-  { icon: "src/assets/javascript.svg", language: "JavaScript" },
-  { icon: "src/assets/tailwind.svg", language: "Tailwind CSS" },
-  { icon: "src/assets/react.svg", language: "ReactJS" },
+  { icon: htmlIcon, language: 'HTML' },
+  { icon: cssIcon, language: 'CSS' },
+  { icon: jsIcon, language: 'JavaScript' },
+  { icon: tailwindIcon, language: 'Tailwind CSS' },
+  { icon: reactIcon, language: 'ReactJS' },
   { icon: "vite.svg", language: "Vite" },
-  { icon: "src/assets/php.svg", language: "PHP" },
-  { icon: "src/assets/laravel.svg", language: "Laravel" },
-  { icon: "src/assets/firebase.svg", language: "Firebase" },
-  { icon: "src/assets/mysql.svg", language: "MySql" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "src/assets/kotlin.svg", language: "Kotlin" },
+  { icon: phpIcon, language: 'PHP' },
+  { icon: laravelIcon, language: 'Laravel' },
+  { icon: firebaseIcon, language: 'Firebase' },
+  { icon: mysqlIcon, language: 'MySql' },
+  { icon: vercelIcon, language: 'Vercel' },
+  { icon: kotlinIcon, language: 'Kotlin' },
 ];
-
 export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = useState(0);
