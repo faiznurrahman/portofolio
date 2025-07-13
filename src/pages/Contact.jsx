@@ -130,7 +130,7 @@ const ContactPage = () => {
           data-aos-duration="1100"
           className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2"
         >
-          Punya pertanyaan? Kirimi saya pesan, dan saya akan segera membalasnya.
+          Ada pertanyaan? Kirim saya pesan, dan saya akan segera membalasnya.
         </p>
       </div>
 

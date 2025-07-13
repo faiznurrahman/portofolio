@@ -21,7 +21,7 @@ const Navbar = () => {
                 if (section) {
                     return {
                         id: item.href.replace("#", ""),
-                        offset: section.offsetTop - 150, // Adjusted for better section detection
+                        offset: section.offsetTop - 150,
                         height: section.offsetHeight
                     };
                 }
@@ -56,7 +56,7 @@ const Navbar = () => {
         e.preventDefault();
         const section = document.querySelector(href);
         if (section) {
-            const top = section.offsetTop - 64; // Adjusted to match Home's pt-16 (64px)
+            const top = section.offsetTop - 64;
             window.scrollTo({
                 top: top,
                 behavior: "smooth"
@@ -71,8 +71,8 @@ const Navbar = () => {
                 isOpen
                     ? "bg-[#030014]"
                     : scrolled
-                    ? "bg-[#030014]/50 backdrop-blur-xl"
-                    : "bg-transparent"
+                    ? "bg-[#030014]/80 backdrop-blur-xl"
+                    : "bg-[#030014]/20 backdrop-blur-xl"
             }`}
         >
             <div className="mx-auto px-[5%] sm:px-[5%] lg:px-[10%]">
@@ -139,9 +139,9 @@ const Navbar = () => {
         
             {/* Mobile Menu */}
             <div
-                className={`md:hidden transition-all duration-300 ease-in-out bg-[#030014] pt-4 ${
+                className={`md:hidden transition-all duration-200 ease-in-out bg-[#030014] pt-4 ${
                     isOpen
-                        ? "max-h-screen opacity-100"
+                        ? "max-h-[300px] opacity-100"
                         : "max-h-0 opacity-0 overflow-hidden"
                 }`}
             >
@@ -151,7 +151,7 @@ const Navbar = () => {
                             key={item.label}
                             href={item.href}
                             onClick={(e) => scrollToSection(e, item.href)}
-                            className={`block px-4 py-3 text-lg font-medium transition-all duration-300 ease-in-out ${
+                            className={`block px-4 py-3 text-lg font-medium transition-all duration-200 ease-in-out ${
                                 activeSection === item.href.substring(1)
                                     ? "bg-gradient-to-r from-[#0d9488] to-[#22d3ee] bg-clip-text text-transparent font-semibold"
                                     : "text-gray-200 hover:text-cyan-400"

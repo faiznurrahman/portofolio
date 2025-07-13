@@ -22,7 +22,7 @@ const Header = memo(() => (
       data-aos-duration="800"
     >
       <Sparkles className="w-5 h-5 text-cyan-400" />
-      Transforming ideas into digital experiences
+      From imagination to pixel-perfect execution
       <Sparkles className="w-5 h-5 text-cyan-400" />
     </p>
   </div>
@@ -144,7 +144,7 @@ const AboutPage = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href="https://drive.google.com/drive/folders/1raP3kvKoU9kKb5w_tmVDvvawFVo8XRmx?usp=sharing" className="w-full lg:w-auto">
                 <button 
                   data-aos="fade-up"
                   data-aos-duration="800"
@@ -157,7 +157,7 @@ const AboutPage = () => {
                 <button 
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#22d3ee]/50 text-[#22d3ee] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#22d3ee]/10"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#22d3ee]/50 text-[#22d3ee]font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#22d3ee]/10"
                 >
                   <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
                 </button>
